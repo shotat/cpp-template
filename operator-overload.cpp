@@ -5,6 +5,17 @@
 using namespace std;
 #define PII pair<int, int>
 
+
+int main(int argc, char** argv) {
+  PII p = make_pair(1, 2);
+  PII p2(1, 2);
+  vector<int> v(10, -4);
+  vector< vector<int> > vv(5, vector<int>(3, -10));
+  cout << v << endl;
+  cout << vv << endl;
+  cout << p << endl;
+  return 0;
+}
 // pair
 template<typename T1, typename T2> ostream& operator<<(ostream& s, const pair<T1, T2>& p) {return s << "(" << p.first << ", " << p.second << ")";}
 
@@ -32,14 +43,3 @@ template<typename T1, typename T2> ostream& operator<<(ostream& s, const map<T1,
   return s;
 }
 
-
-int main(int argc, char** argv) {
-  PII p = make_pair(1, 2);
-  PII p2(1, 2);
-  vector<int> v(10, -4);
-  vector< vector<int> > vv(5, vector<int>(3, -10));
-  cout << v << endl;
-  cout << vv << endl;
-  cout << p << endl;
-  return 0;
-}
